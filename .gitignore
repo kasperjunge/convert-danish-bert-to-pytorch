@@ -1,0 +1,10 @@
+config.py
+dataset.py
+engine.py
+model.py
+train.py
+
+bert-base-danish/*
+.env/*
+
+*.gitkeep
