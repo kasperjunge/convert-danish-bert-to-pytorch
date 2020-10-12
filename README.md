@@ -10,11 +10,10 @@ BERT is an NLP model artichecture which is pre-trained on a huge corpus of text 
 Pre-training BERT is computationally heavy. [AWS writes that BERT can be pre-trained in 62 minutes using 256 p3dn.24xlarge EC2 GPU instances](https://aws.amazon.com/blogs/machine-learning/amazon-web-services-achieves-fastest-training-times-for-bert-and-mask-r-cnn/), each costing 33.7 USD/hour. 
 This adds up to ~8627 USD to pre-train BERT!
 
+<img src="https://user-images.githubusercontent.com/39537120/91264134-d38fee00-e770-11ea-83d9-45ad39fa47d6.png" width="400">
 The transformers library provide pre-trained versions of BERT in many languages, but sadly not in danish. 
 
-<img src="https://user-images.githubusercontent.com/39537120/91264134-d38fee00-e770-11ea-83d9-45ad39fa47d6.png" width="400">
-
-Fortunately [BotXo](https://github.com/botxo) has pre-trained a danish BERT and made it public available. However, this is a TensorFlow version of BERT, and since I use PyTorch I would like to convert it to PyTorch.
+Fortunately, [BotXo](https://github.com/botxo) has pre-trained a danish version of BERT and made it public available. BotXo's model is defined in TensorFlow. Because I use PyTorch I had to converted it. Here is how i did:
 
 # Tutorial
 ## Step 1
